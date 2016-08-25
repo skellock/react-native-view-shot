@@ -105,7 +105,7 @@ public class ViewShot implements UIBlock {
         if (bitmap == null) {
             throw new RuntimeException("Impossible to snapshot the view");
         }
-        bitmap.compress(format, (int)(100.0 * quality), fos);
+        bitmap.compress(format, (int)(100.0 * quality), os);
 
         view.setDrawingCacheEnabled(false);
     }
